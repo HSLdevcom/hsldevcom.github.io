@@ -1,4 +1,15 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: `http://example.com`,
+    title: `HSL developer documentation`,
+    shareImage: ``,
+    colors: {
+      //https://www.hsl.fi/tyyliopas/varit
+      primary: `#007AC9`,
+      secondary: `#00B9E4`,
+      background: `#BEE4F8`,
+    },
+  },
   plugins: [
     `gatsby-plugin-styled-components`,
     {
