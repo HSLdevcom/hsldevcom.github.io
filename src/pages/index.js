@@ -1,3 +1,5 @@
 import React from "react"
 
-export default () => <div>Hello world!</div>
+import Container from "../components/Container"
+
+export default () => <Container><div style={{ backgroundColor: 'red' }}>test</div></Container>
