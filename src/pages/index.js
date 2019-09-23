@@ -1,5 +1,28 @@
 import React from "react"
+import { graphql, Link } from "gatsby"
 
 import Container from "../components/Container"
 
-export default () => <Container><div style={{ backgroundColor: 'red' }}>test</div></Container>
+export default ({ data }) => (
+  <Container>
+    <h1>HSL developer documentation</h1>
+    <ul>
+      { data.allMarkdownRemark.nodes.map(page => <li key={page.fields.slug}><Link to={page.fields.slug}>{page.frontmatter.title}</Link></li>)}
+    </ul>
+  </Container>
+)
+
+export const query = graphql`
+  {
+    allMarkdownRemark(filter: { fields: { slug: { regex: "/^\/[^\/]*\/$/" }}}) {
+      nodes {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+        }
+      }
+    }
+  }
+`
