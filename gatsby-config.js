@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/dev-documentation`,
   siteMetadata: {
     siteUrl: `http://example.com`,
     title: `HSL developer documentation`,
