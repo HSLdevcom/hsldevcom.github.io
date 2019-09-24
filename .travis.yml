@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - "10"
+git:
+  depth: 5
+cache:
+  yarn: true
+script: gatsby build --prefix-paths
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local-dir: public
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  target-branch: gh-pages
+  on:
+    tags: true
