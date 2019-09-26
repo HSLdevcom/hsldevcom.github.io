@@ -2,9 +2,11 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Container from "../components/Container"
+import SEO from "../components/SEO";
 
-export default ({ data }) => (
+export default ({ data, pageContext }) => (
   <Container>
+      <SEO pageTitle={data.markdownRemark.frontmatter.title} pageDescription={data.markdownRemark.excerpt} pagePath={pageContext.slug} />
       <h1>{ data.markdownRemark.frontmatter.title }</h1>
       <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
   </Container>

@@ -1,8 +1,9 @@
 module.exports = {
   pathPrefix: `/dev-documentation`,
   siteMetadata: {
-    siteUrl: `http://example.com`,
+    siteUrl: `https://hsldevcom.github.io/dev-documentation`,
     title: `HSL developer documentation`,
+    description: `Documentation for open APIs and data of HSL`,
     shareImage: ``,
     colors: {
       //https://www.hsl.fi/tyyliopas/varit
