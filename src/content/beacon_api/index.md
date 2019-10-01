@@ -23,7 +23,7 @@ Each beacon has following fields:
 
 | Field            | Type      | Description |
 |------------------|-----------|-------------|
-| `serial`         | String    | Serial number of the beacon
+| `serial`         | String    | Serial number of the beacon. Unique for each beacon.
 | `uuid`           | String    | UUID of the beacon. All HSL beacons use shared UUID.<br/>Note that `uuid` does not contain dashes.
 | `major`          | String    | Major value identifying the beacon. Major value can be shared between multiple beacons, if they have different minor values.
 | `minor`          | String    | Minor value identifying the beacon. Minor value can be shared between multiple beacons, if they have different major values.
