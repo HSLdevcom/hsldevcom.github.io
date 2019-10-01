@@ -9,7 +9,7 @@ export default ({ pageTitle, pageDescription, pagePath }) => {
 
   const title = pageTitle ? `${pageTitle} | ${metadata.title}` : metadata.title;
 
-  const canonicalUrl = metadata.siteUrl + pagePath;
+  const canonicalUrl = pagePath && metadata.siteUrl + pagePath;
 
   const description = pageDescription || metadata.description;
 
@@ -33,7 +33,7 @@ export default ({ pageTitle, pageDescription, pagePath }) => {
       <meta name="twitter:image" content={shareImageUrl} />
       <title>{title}</title>
       <meta name="description" content={description} />
-      <link rel="canonical" href={canonicalUrl} />
+      { !!canonicalUrl && <link rel="canonical" href={canonicalUrl} /> }
       <link rel="icon" type="image/x-icon" href={withPrefix('/favicon.ico')} />
     </Helmet>
   );
