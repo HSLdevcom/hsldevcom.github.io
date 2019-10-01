@@ -6,12 +6,12 @@ import Img from "gatsby-image"
 const desktopMediaQuery = `min-width: 768px`
 
 const Logo = styled(Img)`
-  width: ${props => props.mobileWidth}px;
-  height: ${props => props.mobileHeight}px;
+  width: 128px;
+  height 48px;
 
   @media(${desktopMediaQuery}) {
-      width: ${props => props.desktopWidth}px;
-      height ${props => props.desktopHeight}px;
+      width: 215px;
+      height: 80px;
   }
 `
 
@@ -20,15 +20,11 @@ export default () => {
         {
             file(relativePath: { eq: "hsl_logo.png" }) {
                 childImageSharp {
-                    desktop: fluid(maxHeight: 80) {
-                        height: presentationHeight
-                        width: presentationWidth
-                        ...GatsbyImageSharpFluid_noBase64
+                    desktop: fixed(height: 80, width: 215) {
+                        ...GatsbyImageSharpFixed_noBase64
                     }
-                    mobile: fluid(maxHeight: 48) {
-                        height: presentationHeight
-                        width: presentationWidth
-                        ...GatsbyImageSharpFluid_noBase64
+                    mobile: fixed(height: 48, width: 128) {
+                        ...GatsbyImageSharpFixed_noBase64
                     }
                 }
             }
@@ -45,5 +41,5 @@ export default () => {
         }
     ]
 
-    return <Logo fluid={sources} fadeIn={false} desktopHeight={desktop.height} desktopWidth={desktop.width} mobileHeight={mobile.height} mobileWidth={mobile.width} />
+    return <Logo fluid={sources} fadeIn={false} />
 }
