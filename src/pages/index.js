@@ -16,7 +16,7 @@ export default ({ data }) => (
 
 export const query = graphql`
   {
-    allMarkdownRemark(filter: { fields: { slug: { regex: "/^\/[^\/]*\/$/" }}}) {
+    allMarkdownRemark(filter: { fields: { slug: { regex: "/^\/[^\/]*\/$/" }}}, sort: { fields: frontmatter___title, order: ASC }) {
       nodes {
         fields {
           slug
