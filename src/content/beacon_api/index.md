@@ -25,8 +25,8 @@ Each beacon has following fields:
 |------------------|-----------|-------------|
 | `serial`         | String    | Serial number of the beacon. Unique for each beacon.
 | `uuid`           | String    | UUID of the beacon. All HSL beacons use shared UUID.<br/>Note that `uuid` does not contain dashes.
-| `major`          | String    | Major value identifying the beacon. Major values are shared between multiple beacons. See descriptions for major values [below](#major-values).
-| `minor`          | String    | Minor value identifying the beacon. Minor value can be shared between multiple beacons with different major values.
+| `major`          | String    | Major value identifying the beacon in hexadecimal format, e.g. `"0015"`. Major values are shared between multiple beacons. See descriptions for major values [below](#major-values).
+| `minor`          | String    | Minor value identifying the beacon in hexadecimal format, e.g. `"012C"`. Minor value can be shared between multiple beacons with different major values.
 | `location`       | Integer   | Location type of the beacon. Possible values: <ul><li>`1` = vehicle</li><li>`2` = stop</li></ul>
 | `status`         | Integer   | Status of the beacon. Status of the beacon is always `2` (active) as the public API returns only active beacons.
 | `stop`           | Integer   | ID of the stop where the beacon is installed. Corresponds to `stop_id` in GTFS and `Stop.gtfsId` in [Digitransit API](https://digitransit.fi/en/developers/apis/1-routing-api/stops/).<br/>`null` if location type is `1`.
