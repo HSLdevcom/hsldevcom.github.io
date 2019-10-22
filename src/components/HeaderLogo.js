@@ -41,5 +41,5 @@ export default () => {
         }
     ]
 
-    return <Logo fluid={sources} fadeIn={false} />
+    return <Logo fixed={sources} loading="eager" fadeIn={false} />
 }
