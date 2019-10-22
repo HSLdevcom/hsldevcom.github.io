@@ -20,11 +20,11 @@ export default () => {
         {
             file(relativePath: { eq: "hsl_logo.png" }) {
                 childImageSharp {
-                    desktop: fixed(height: 80, width: 215) {
-                        ...GatsbyImageSharpFixed_noBase64
+                    desktop: fluid(maxHeight: 80, maxWidth: 215) {
+                        ...GatsbyImageSharpFluid_noBase64
                     }
-                    mobile: fixed(height: 48, width: 128) {
-                        ...GatsbyImageSharpFixed_noBase64
+                    mobile: fluid(maxHeight: 48, maxWidth: 128) {
+                        ...GatsbyImageSharpFluid_noBase64
                     }
                 }
             }
@@ -41,5 +41,5 @@ export default () => {
         }
     ]
 
-    return <Logo fixed={sources} loading="eager" fadeIn={false} />
+    return <Logo fluid={sources} loading="eager" fadeIn={false} />
 }
