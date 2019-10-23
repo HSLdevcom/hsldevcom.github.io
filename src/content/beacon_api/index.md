@@ -9,8 +9,14 @@ The API is a simple REST interface that returns data in JSON format.
 ## Endpoint
 
 ```
-https://api.lij.hsl.fi/beacon-info-api/v1.0/beacons/active
+https://dev.hsl.fi/beacons
 ```
+
+### Authentication
+
+The API is currently publicly available and requires no authentication.
+
+Note that in the future the API will be using API management and requiring API keys to use.
 
 ### Usage
 
