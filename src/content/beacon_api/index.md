@@ -67,4 +67,14 @@ List of major values:
 
 Beacons are identified by combination of their `uuid`, `major` and `minor` properties.  
 
-Libraries such as [Core Location (iOS)](https://developer.apple.com/documentation/corelocation/) and [Android Beacon Library](https://altbeacon.github.io/android-beacon-library/) can be used to detect nearby beacons, which can then be matched to a corresponding beacon from the API with their `uuid`, `major` and `minor` values. 
+Libraries such as [Core Location (iOS)](https://developer.apple.com/documentation/corelocation/) and [Android Beacon Library](https://altbeacon.github.io/android-beacon-library/) can be used to detect nearby beacons, which can then be matched to a corresponding beacon from the API with their `uuid`, `major` and `minor` values.
+
+## FAQ
+
+### Which stops have beacons installed?
+
+> Currently beacons have been installed to most stops in Helsinki. There are no beacons installed to stops in other cities.
+
+### Which vehicles have beacons installed?
+
+> Currently beacons have been installed to most buses and all trams and metros. Beacons are also installed to commuter trains, but they have not yet been configured to this API (work in progress).
