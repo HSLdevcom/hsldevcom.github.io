@@ -43,7 +43,7 @@ Each beacon has following fields:
 
 #### Major values
 
-Major value of a beacon depends on where it is installed.  
+Major value of a beacon depends on where it is installed. Note that all major values are not currently in use.
 
 List of major values:
 
