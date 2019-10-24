@@ -41,6 +41,8 @@ Each beacon has following fields:
 | `responsible`    | String    | ID of the organization responsible for the beacon.
 | `modified_on`    | Integer   | Timestamp (in milliseconds) when the beacon data was modified.
 
+Note that currently the response also contains fields `note`, `created_by`, `created_on` and `modified_by` that always have `null` value. These fields will be removed from the response later.
+
 #### Major values
 
 Major value of a beacon depends on where it is installed. Note that all major values are not currently in use.
