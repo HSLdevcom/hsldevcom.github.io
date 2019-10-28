@@ -3,7 +3,7 @@ module.exports = {
     siteUrl: `https://hsldevcom.github.io`,
     title: `HSL developer documentation`,
     description: `Documentation for open APIs and data of HSL`,
-    shareImage: ``,
+    shareImage: `/share_image.jpg`,
     colors: {
       //https://www.hsl.fi/tyyliopas/varit
       primary: `#007AC9`,

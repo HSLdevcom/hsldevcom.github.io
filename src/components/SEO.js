@@ -27,6 +27,8 @@ export default ({ pageTitle, pageDescription, pagePath }) => {
       <meta property="og:description" content={description} />
       <meta property="og:locale" description={language} />
       <meta property="og:image" content={shareImageUrl} />
+      <meta property="og:image:width" content="140" />
+      <meta property="og:image:height" content="140" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
