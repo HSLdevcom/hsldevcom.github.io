@@ -80,3 +80,7 @@ Libraries such as [Core Location (iOS)](https://developer.apple.com/documentatio
 ### Which vehicles have beacons installed?
 
 > Currently beacons have been installed to most buses and all trams and metros. Beacons are also installed to commuter trains, but they have not yet been configured to this API (work in progress). Suomenlinna ferries do not have beacons installed.
+
+## Terms of use
+
+Beacon data is licensed under [Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/). When using the data, please add an attribution where you mention the licensee and the year when the data was fetched (e.g. © Helsinki Region Transport 2019).
