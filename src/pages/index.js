@@ -3,9 +3,11 @@ import { graphql, Link } from "gatsby"
 
 import Container from "../components/Container"
 import SEO from "../components/SEO"
+import Breadcrumbs from "../components/Breadcrumbs"
 
 export default ({ data }) => (
   <Container>
+    <Breadcrumbs />
     <SEO pagePath='/' />
     <h1>HSL developer documentation</h1>
     <ul>

@@ -23,6 +23,9 @@ exports.createPages = ({ graphql, actions }) => {
             fields {
               slug
             }
+            frontmatter {
+              title
+            }
           }
         }
       }
@@ -33,7 +36,8 @@ exports.createPages = ({ graphql, actions }) => {
         path: node.fields.slug,
         component: getTemplateComponentForNode(node),
         context: {
-          slug: node.fields.slug
+          slug: node.fields.slug,
+          breadcrumbs: findBreadcrumbs(node, result.data.allMarkdownRemark)
         }
       });
     });
@@ -43,3 +47,11 @@ exports.createPages = ({ graphql, actions }) => {
 const getTemplateComponentForNode = node => {
     return path.resolve(`./src/templates/page.js`)
 };
+
+const findBreadcrumbs = (node, allMarkdownRemark) => {
+  return allMarkdownRemark.edges.filter(({ node: otherNode }) => {
+    return node.fields.slug.startsWith(otherNode.fields.slug) && node.fields.slug !== otherNode.fields.slug
+  }).map(({ node }) => {
+    return { path: node.fields.slug, title: node.frontmatter.title }
+  }).sort((a, b) => a.path.length - b.path.length)
+}
