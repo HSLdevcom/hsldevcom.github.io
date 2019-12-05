@@ -8,9 +8,9 @@ The API is a simple REST interface that returns data in JSON format.
 
 ## Endpoint
 
-```
-https://dev.hsl.fi/beacons
-```
+`https://dev.hsl.fi/beacons`
+
+The API supports only one type of request that is HTTP GET to above endpoint. There are no query parameters for filtering etc.
 
 ### Authentication
 
