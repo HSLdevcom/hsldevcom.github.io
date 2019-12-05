@@ -11,6 +11,10 @@ const Markdown = styled.div`
     display: block;
     overflow-x: auto;
   }
+  & table ul, & table ol {
+    margin-bottom: 0;
+    margin-top: 0.5em;
+  }
 `
 
 export default ({ data, pageContext }) => (
