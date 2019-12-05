@@ -4,7 +4,11 @@ import styled from "styled-components"
 import Header from "./Header"
 
 const Container = styled.div`
-  margin: 2rem 2rem;
+  margin: 0.75rem 0.75rem;
+
+  @media(min-width: 768px) {
+    margin: 2rem 2rem;
+  }
 `
 
 const Content = styled.main`
