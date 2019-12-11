@@ -6,7 +6,6 @@ import useSiteMetadata from "../hooks/useSiteMetadata"
 import HeaderLogo from "./HeaderLogo"
 
 const Header = styled.header`
-  position: sticky;
   z-index: 3;
   background-color: ${props => props.color};
   color: white;
