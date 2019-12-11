@@ -11,8 +11,12 @@ const Container = styled.div`
 `
 
 const ContentWrapper = styled.div`
-  margin: 2rem 2rem;
   flex: 1 0 auto;
+  margin: 0.75rem 0.75rem;
+
+  @media(min-width: 768px) {
+    margin: 2rem 2rem;
+  }
 `
 
 const Content = styled.main`
