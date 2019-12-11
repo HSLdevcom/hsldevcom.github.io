@@ -2,9 +2,17 @@ import React from "react"
 import styled from "styled-components"
 
 import Header from "./Header"
+import Footer from "./Footer"
 
 const Container = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+`
+
+const ContentWrapper = styled.div`
   margin: 2rem 2rem;
+  flex: 1 0 auto;
 `
 
 const Content = styled.main`
@@ -19,11 +27,14 @@ const Content = styled.main`
 
 export default ({ children }) => (
   <>
-    <Header />
     <Container>
-      <Content>
-        {children}
-      </Content>
+      <Header />
+      <ContentWrapper>
+        <Content>
+          {children}
+        </Content>
+      </ContentWrapper>
+      <Footer />
     </Container>
   </>
 )
