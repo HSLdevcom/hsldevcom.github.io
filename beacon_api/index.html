@@ -148,7 +148,7 @@ Each beacon has following fields:</p>
 <tr>
 <td><code class="language-text">stop</code></td>
 <td>Integer</td>
-<td>ID of the stop where the beacon is installed. Corresponds to <code class="language-text">stop_id</code> in GTFS and <code class="language-text">Stop.gtfsId</code> in <a href="https://digitransit.fi/en/developers/apis/1-routing-api/stops/">Digitransit API</a>.<br/><code class="language-text">null</code> if location type is <code class="language-text">1</code>.</td>
+<td>ID of the stop where the beacon is installed. Corresponds to <code class="language-text">stop_id</code> in GTFS and <code class="language-text">Stop.gtfsId</code> in <a href="https://digitransit.fi/en/developers/apis/1-routing-api/stops/">Digitransit API</a>.<br/><code class="language-text">null</code> if location type is <code class="language-text">1</code>.<br/><br/><strong>Note:</strong> stop ID can also refer to a station, which have a different query in the Digitransit API.</td>
 </tr>
 <tr>
 <td><code class="language-text">operator</code></td>
@@ -202,7 +202,7 @@ Each beacon has following fields:</p>
 </tr>
 <tr>
 <td><code class="language-text">0005</code></td>
-<td>Train station platform</td>
+<td>Train station</td>
 </tr>
 <tr>
 <td><code class="language-text">0007</code></td>
@@ -248,7 +248,7 @@ Each beacon has following fields:</p>
 </blockquote>
 <h3 id="which-vehicles-have-beacons-installed" style="position:relative;"><a href="#which-vehicles-have-beacons-installed" aria-label="which vehicles have beacons installed permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Which vehicles have beacons installed?</h3>
 <blockquote>
-<p>Currently beacons have been installed to most buses and all trams and metros. Beacons are also installed to commuter trains, but they have not yet been configured to this API (work in progress). Suomenlinna ferries do not have beacons installed.</p>
+<p>Currently beacons have been installed to most buses and commuter trains and all trams and metros. Beacons have been also installed to Suomenlinna ferries, but ferries don't produce HFP data, so it is not possible to match ferry beacon data with HFP data.</p>
 </blockquote>
 <h2 id="terms-of-use" style="position:relative;"><a href="#terms-of-use" aria-label="terms of use permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Terms of use</h2>
 <p>Beacon data is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons BY 4.0</a>. When using the data, please add an attribution where you mention the licensee and the year when the data was fetched (e.g. © Helsinki Region Transport 2019).</p></div></main></div><footer class="Footer-sc-1m2jrhi-0 fOMvrt"><div class="Footer__FooterContent-sc-1m2jrhi-1 bmKDnO"><ul class="Footer__LinkList-sc-1m2jrhi-2 NvyLl"><li><a href="https://hsl.fi/en">HSL.fi</a></li><li><a href="https://www.hsl.fi/en/opendata">HSL open data</a></li></ul><hr class="Footer__Divider-sc-1m2jrhi-3 hlKCtq"/><ul class="Footer__ContactList-sc-1m2jrhi-5 cfSzKk"><li><a href="https://twitter.com/HSLdevcom/"><div class="Footer__ContactIcon-sc-1m2jrhi-4 bweZrk gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:16px;height:16px"><noscript><picture><source srcset="/static/77876bb0f3b92474cfb3b2e4afbed3e9/70eba/twitter_logo.png 1x,
