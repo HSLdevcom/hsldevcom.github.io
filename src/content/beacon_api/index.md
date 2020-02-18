@@ -35,7 +35,7 @@ Each beacon has following fields:
 | `minor`          | String    | Minor value identifying the beacon in hexadecimal format, e.g. `"012C"`. Minor value can be shared between multiple beacons with different major values.
 | `location`       | Integer   | Location type of the beacon. Possible values: <ul><li>`1` = vehicle</li><li>`2` = stop</li></ul>
 | `status`         | Integer   | Status of the beacon. Status of the beacon is always `2` (active) as the public API returns only active beacons.
-| `stop`           | Integer   | ID of the stop where the beacon is installed. Corresponds to `stop_id` in GTFS and `Stop.gtfsId` in [Digitransit API](https://digitransit.fi/en/developers/apis/1-routing-api/stops/).<br/>`null` if location type is `1`.
+| `stop`           | Integer   | ID of the stop where the beacon is installed. Corresponds to `stop_id` in GTFS and `Stop.gtfsId` in [Digitransit API](https://digitransit.fi/en/developers/apis/1-routing-api/stops/).<br/>`null` if location type is `1`.<br/><br/>**Note:** stop ID can also refer to a station, which have a different query in the Digitransit API.
 | `operator`       | String    | Operator ID of the vehicle where the beacon is installed. Corresponds to `operator_id` in [HFP API](https://digitransit.fi/en/developers/apis/4-realtime-api/vehicle-positions/).<br/>`null` if location type is `2`.
 | `vehicle_number` | String    | Vehicle number of the vehicle where the beacon is installed. Corresponds to `vehicle_number` in [HFP API](https://digitransit.fi/en/developers/apis/4-realtime-api/vehicle-positions/).<br/>`null` if location type is `2`.
 | `responsible`    | String    | ID of the organization responsible for the beacon.
@@ -55,7 +55,7 @@ List of major values:
 | `0002` | Tram
 | `0003` | Metro
 | `0004` | Train
-| `0005` | Train station platform
+| `0005` | Train station
 | `0007` | Ferry
 | `0010` | Bus
 | `0011` | Bus
