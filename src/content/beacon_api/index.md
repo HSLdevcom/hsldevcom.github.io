@@ -79,7 +79,7 @@ Libraries such as [Core Location (iOS)](https://developer.apple.com/documentatio
 
 ### Which vehicles have beacons installed?
 
-> Currently beacons have been installed to most buses and all trams and metros. Beacons are also installed to commuter trains, but they have not yet been configured to this API (work in progress). Suomenlinna ferries do not have beacons installed.
+> Currently beacons have been installed to most buses and commuter trains and all trams and metros. Beacons have been also installed to Suomenlinna ferries, but ferries don't produce HFP data, so it is not possible to match ferry beacon data with HFP data.
 
 ## Terms of use
 
