@@ -9,8 +9,8 @@ Note that if you are not using the static GTFS package, you most likely want to 
 ## Endpoints
 
 * Service alerts:  
-`https://api.digitransit.fi/realtime/service-alerts/v2/hsl`
+`https://realtime.hsl.fi/realtime/service-alerts/v2/hsl`
 * Trip updates:  
-`https://api.digitransit.fi/realtime/trip-updates/v2/hsl`
+`https://realtime.hsl.fi/realtime/trip-updates/v2/hsl`
 * Vehicle positions:  
-`https://api.digitransit.fi/realtime/vehicle-positions/v2/hsl`
+`https://realtime.hsl.fi/realtime/vehicle-positions/v2/hsl`
