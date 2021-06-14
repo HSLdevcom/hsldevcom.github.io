@@ -92,7 +92,8 @@ export default () => {
         <FooterContent>
             <LinkList>
                 <li><a href="https://hsl.fi/en">HSL.fi</a></li>
-                <li><a href="https://www.hsl.fi/en/opendata">HSL open data</a></li>
+                <li><a href="https://www.hsl.fi/en/hsl/open-data">HSL open data</a></li>
+                <li><a href="https://digitransit.fi/en/developers/">Digitransit for developers</a></li>
             </LinkList>
             <Divider />
             <ContactList>
