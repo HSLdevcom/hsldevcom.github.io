@@ -8,4 +8,4 @@ Repository for HSL developer documentation site (https://hsldevcom.github.io).
 
 ## Publishing
 
-The site is published to GitHub Pages by Travis after creating a new [release](https://github.com/HSLdevcom/hsldevcom.github.io/releases).
+The site is published to GitHub Pages by GitHub Actions after creating a new [release](https://github.com/HSLdevcom/hsldevcom.github.io/releases).
