@@ -1,4 +1,4 @@
-# hsldevcom.github.io [![Build Status](https://travis-ci.org/HSLdevcom/hsldevcom.github.io.svg?branch=source)](https://travis-ci.org/HSLdevcom/hsldevcom.github.io)
+# hsldevcom.github.io [![Build and deploy](https://github.com/HSLdevcom/hsldevcom.github.io/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/HSLdevcom/hsldevcom.github.io/actions/workflows/build-and-deploy.yml)
 Repository for HSL developer documentation site (https://hsldevcom.github.io).
 
 ## Development
